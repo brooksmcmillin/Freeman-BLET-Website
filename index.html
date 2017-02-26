@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title> Freeman Pivot </title>
+
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1> Beacon Data</h1>
+
+    <table id="last-checkin" class="display" cellspacing="0" width="100%">
+        <caption> Last Checkin</caption>
+        <thead>
+        <tr>
+            <th>Beacon ID</th>
+            <th>Device Name</th>
+            <th>Box Contents</th>
+            <th>Timestamp</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <th>Beacon ID</th>
+            <th>Device Name</th>
+            <th>Box Contents</th>
+            <th>Timestamp</th>
+        </tr>
+        </tfoot>
+    </table>
+
+
+</body>
+<script>
+        $(document).ready(function()
+        {
+        $('#last-checkin').DataTable(
+            {
+            "ajax": '/api/lastcheckin.php'
+            } );
+        } );
+</script>
+</html>
