@@ -15,23 +15,23 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="99" column="39" lean-forward="false" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
+            <state relative-caret-position="195">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="allbeacons.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="allbeacons.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/allbeacons.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+            <state relative-caret-position="122">
+              <caret line="33" column="108" lean-forward="false" selection-start-line="33" selection-start-column="108" selection-end-line="33" selection-end-column="108" />
               <folding>
-                <marker date="1488088312000" expanded="true" signature="420:459" ph="SELECT * FRO... beacon" />
+                <marker date="1488093694000" expanded="true" signature="420:459" ph="SELECT * FRO... beacon" />
               </folding>
             </state>
           </provider>
@@ -53,18 +53,19 @@
       <file leaf-file-name="updatedata.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/updatedata.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="22" column="90" lean-forward="false" selection-start-line="22" selection-start-column="90" selection-end-line="22" selection-end-column="90" />
+            <state relative-caret-position="285">
+              <caret line="24" column="97" lean-forward="false" selection-start-line="24" selection-start-column="97" selection-end-line="24" selection-end-column="97" />
               <folding>
-                <marker date="1488088049000" expanded="true" signature="556:573" ph="UPDATE beaco... " />
-                <marker date="1488088049000" expanded="true" signature="556:586" ph="UPDATE beaco... " />
-                <marker date="1488088049000" expanded="true" signature="556:589" ph="UPDATE beaco... " />
-                <marker date="1488088049000" expanded="true" signature="556:601" ph="UPDATE beaco... " />
-                <marker date="1488088049000" expanded="true" signature="556:616" ph="UPDATE beaco... " />
-                <marker date="1488088049000" expanded="true" signature="556:619" ph="UPDATE beaco... " />
-                <marker date="1488088049000" expanded="true" signature="556:650" ph="UPDATE beaco... " />
-                <marker date="1488088049000" expanded="true" signature="556:651" ph="UPDATE beaco... " />
-                <marker date="1488088049000" expanded="true" signature="562:570" ph="INSERT INTO beacon... " />
+                <marker date="1488092986000" expanded="true" signature="624:641" ph="UPDATE beaco... " />
+                <marker date="1488092986000" expanded="true" signature="624:654" ph="UPDATE beaco... " />
+                <marker date="1488092986000" expanded="true" signature="624:657" ph="UPDATE beaco... " />
+                <marker date="1488092986000" expanded="true" signature="624:669" ph="UPDATE beaco... " />
+                <marker date="1488092986000" expanded="true" signature="624:684" ph="UPDATE beaco... " />
+                <marker date="1488092986000" expanded="true" signature="624:687" ph="UPDATE beaco... " />
+                <marker date="1488092986000" expanded="true" signature="624:734" ph="UPDATE beaco... " />
+                <marker date="1488092986000" expanded="true" signature="624:764" ph="UPDATE beaco... " />
+                <marker date="1488092986000" expanded="true" signature="624:765" ph="UPDATE beaco... " />
+                <marker date="1488092986000" expanded="true" signature="630:638" ph="INSERT INTO beacon... " />
               </folding>
             </state>
           </provider>
@@ -88,8 +89,8 @@
         <option value="$PROJECT_DIR$/api/lastcheckin.php" />
         <option value="$PROJECT_DIR$/api/getdata.php" />
         <option value="$PROJECT_DIR$/api/updatedata.php" />
-        <option value="$PROJECT_DIR$/api/allbeacons.php" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/api/allbeacons.php" />
       </list>
     </option>
   </component>
@@ -233,12 +234,12 @@
       <option name="presentableId" value="Default" />
       <updated>1488060684334</updated>
       <workItem from="1488060686745" duration="1244000" />
-      <workItem from="1488083644658" duration="3011000" />
+      <workItem from="1488083644658" duration="4058000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4255000" />
+    <option name="totallyTimeSpent" value="5302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
@@ -295,30 +296,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/allbeacons.php">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-          <folding>
-            <marker date="1488088312000" expanded="true" signature="420:459" ph="SELECT * FRO... beacon" />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/updatedata.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="90" lean-forward="false" selection-start-line="22" selection-start-column="90" selection-end-line="22" selection-end-column="90" />
+        <state relative-caret-position="285">
+          <caret line="24" column="97" lean-forward="false" selection-start-line="24" selection-start-column="97" selection-end-line="24" selection-end-column="97" />
           <folding>
-            <marker date="1488088049000" expanded="true" signature="556:573" ph="UPDATE beaco... " />
-            <marker date="1488088049000" expanded="true" signature="556:586" ph="UPDATE beaco... " />
-            <marker date="1488088049000" expanded="true" signature="556:589" ph="UPDATE beaco... " />
-            <marker date="1488088049000" expanded="true" signature="556:601" ph="UPDATE beaco... " />
-            <marker date="1488088049000" expanded="true" signature="556:616" ph="UPDATE beaco... " />
-            <marker date="1488088049000" expanded="true" signature="556:619" ph="UPDATE beaco... " />
-            <marker date="1488088049000" expanded="true" signature="556:650" ph="UPDATE beaco... " />
-            <marker date="1488088049000" expanded="true" signature="556:651" ph="UPDATE beaco... " />
-            <marker date="1488088049000" expanded="true" signature="562:570" ph="INSERT INTO beacon... " />
+            <marker date="1488092986000" expanded="true" signature="624:641" ph="UPDATE beaco... " />
+            <marker date="1488092986000" expanded="true" signature="624:654" ph="UPDATE beaco... " />
+            <marker date="1488092986000" expanded="true" signature="624:657" ph="UPDATE beaco... " />
+            <marker date="1488092986000" expanded="true" signature="624:669" ph="UPDATE beaco... " />
+            <marker date="1488092986000" expanded="true" signature="624:684" ph="UPDATE beaco... " />
+            <marker date="1488092986000" expanded="true" signature="624:687" ph="UPDATE beaco... " />
+            <marker date="1488092986000" expanded="true" signature="624:734" ph="UPDATE beaco... " />
+            <marker date="1488092986000" expanded="true" signature="624:764" ph="UPDATE beaco... " />
+            <marker date="1488092986000" expanded="true" signature="624:765" ph="UPDATE beaco... " />
+            <marker date="1488092986000" expanded="true" signature="630:638" ph="INSERT INTO beacon... " />
           </folding>
         </state>
       </provider>
@@ -334,11 +334,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/api/allbeacons.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="99" column="39" lean-forward="false" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="122">
+          <caret line="33" column="108" lean-forward="false" selection-start-line="33" selection-start-column="108" selection-end-line="33" selection-end-column="108" />
+          <folding>
+            <marker date="1488093694000" expanded="true" signature="420:459" ph="SELECT * FRO... beacon" />
+          </folding>
         </state>
       </provider>
     </entry>

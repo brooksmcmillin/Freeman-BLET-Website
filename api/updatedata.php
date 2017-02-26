@@ -10,6 +10,8 @@
 	$beaconID = $_POST["beaconID"];
 	$contents = $_POST["contents"];
 	$location = $_POST["location"];
+	$latitude = $_POST["latitude"];
+	$longitude = $_POST["longitude"];
 
 	$conn = new mysqli($server, $username, $password, $database);
 
@@ -20,7 +22,7 @@
 	
 //	$deviceName = $conn->real_escape_string($_POST["deviceName"]);
 
-	$query = "UPDATE beacon SET box_contents = '{$contents}', box_location = '{$location}' WHERE beacon_id = {$beaconID}";
+	$query = "UPDATE beacon SET box_contents = '{$contents}', box_location = '{$location}', latitude={$latitude}, longitude={$longitude} WHERE beacon_id = {$beaconID}";
 
 	if ($conn->query($query) === TRUE) {
     		error_log( "New record created successfully");
