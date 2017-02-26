@@ -18,18 +18,31 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="60" column="32" lean-forward="false" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="allbeacons.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="lastcheckin.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/lastcheckin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="16" column="75" lean-forward="false" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
+              <folding>
+                <marker date="1488097087000" expanded="true" signature="420:513" ph="SELECT * FRO... beacon" />
+                <marker date="1488097087000" expanded="true" signature="426:513" ph="INSERT INTO checkin... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="allbeacons.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/allbeacons.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="33" column="108" lean-forward="false" selection-start-line="33" selection-start-column="108" selection-end-line="33" selection-end-column="108" />
+            <state relative-caret-position="107">
+              <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="159" />
               <folding>
                 <marker date="1488093694000" expanded="true" signature="420:459" ph="SELECT * FRO... beacon" />
               </folding>
@@ -74,9 +87,13 @@
       <file leaf-file-name="checkin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/checkin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="90">
+              <caret line="25" column="79" lean-forward="false" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
+              <folding>
+                <marker date="1488096905000" expanded="true" signature="613:719" ph="INSERT INTO checkin... " />
+                <marker date="1488096905000" expanded="true" signature="613:732" ph="INSERT INTO checkin... " />
+                <marker date="1488096905000" expanded="true" signature="613:783" ph="INSERT INTO checkin... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,11 +103,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/lastcheckin.php" />
         <option value="$PROJECT_DIR$/api/getdata.php" />
         <option value="$PROJECT_DIR$/api/updatedata.php" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/api/allbeacons.php" />
+        <option value="$PROJECT_DIR$/api/checkin.php" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/api/lastcheckin.php" />
       </list>
     </option>
   </component>
@@ -234,12 +252,12 @@
       <option name="presentableId" value="Default" />
       <updated>1488060684334</updated>
       <workItem from="1488060686745" duration="1244000" />
-      <workItem from="1488083644658" duration="4058000" />
+      <workItem from="1488083644658" duration="5015000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5302000" />
+    <option name="totallyTimeSpent" value="6259000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
@@ -277,33 +295,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/lastcheckin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-208">
-          <caret line="9" column="65" lean-forward="true" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
-          <folding>
-            <marker date="1488084046000" expanded="true" signature="420:492" ph="SELECT * FRO... beacon" />
-            <marker date="1488084046000" expanded="true" signature="426:492" ph="INSERT INTO checkin... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/checkin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/updatedata.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -334,12 +325,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/checkin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="25" column="79" lean-forward="false" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
+          <folding>
+            <marker date="1488096905000" expanded="true" signature="613:719" ph="INSERT INTO checkin... " />
+            <marker date="1488096905000" expanded="true" signature="613:732" ph="INSERT INTO checkin... " />
+            <marker date="1488096905000" expanded="true" signature="613:783" ph="INSERT INTO checkin... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="60" column="32" lean-forward="false" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/allbeacons.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="33" column="108" lean-forward="false" selection-start-line="33" selection-start-column="108" selection-end-line="33" selection-end-column="108" />
+        <state relative-caret-position="107">
+          <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="159" />
           <folding>
             <marker date="1488093694000" expanded="true" signature="420:459" ph="SELECT * FRO... beacon" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/lastcheckin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="16" column="75" lean-forward="false" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
+          <folding>
+            <marker date="1488097087000" expanded="true" signature="420:513" ph="SELECT * FRO... beacon" />
+            <marker date="1488097087000" expanded="true" signature="426:513" ph="INSERT INTO checkin... " />
           </folding>
         </state>
       </provider>

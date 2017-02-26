@@ -14,7 +14,7 @@
     //    die("Connection failed: " . $conn->connect_error);
     }
 
-    $query = "SELECT beacon_id, device_name, MAX(date) FROM checkin GROUP BY beacon_id;";
+    $query = "SELECT beacon_id, device_name, MAX(date), latitude, longitude FROM checkin GROUP BY beacon_id;";
 
     $jsonData = array();
 
@@ -27,8 +27,12 @@
             $device_name = $row[1];
             $box_data = "DATA_HERE";
             $date = $row[2];
+            $latitude = $row[3];
+            $longitude = $row[4];
 
-            array_push($jsonData, array($beacon_id, $device_name, $box_data, $date));
+            array_push($jsonData, array($beacon_id, $device_name, $box_data,
+                "<a href='http://maps.google.com/maps?q={$latitude},{$longitude}&ll={$latitude},{$longitude}&z=17'>(" . $latitude . ", " . $longitude . ")</a>",
+                $date));
         }
     }
     else

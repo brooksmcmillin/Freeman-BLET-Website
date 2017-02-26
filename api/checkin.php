@@ -9,6 +9,8 @@
 
 	$deviceName = $_POST["deviceName"];
 	$beaconID = $_POST["beaconID"];
+	$latitude = $_POST["latitude"];
+	$longitude = $_POST["longitude"];
 
 	echo $deviceName;
 
@@ -21,7 +23,7 @@
 	
 	$deviceName = $conn->real_escape_string($_POST["deviceName"]);
 
-	$query = "INSERT INTO checkin (beacon_id, device_name, date) VALUES ($beaconID, '$deviceName', now());";
+	$query = "INSERT INTO checkin (beacon_id, device_name, latitude, longitude, date) VALUES ($beaconID, '$deviceName', {$latitude}, {$longitude}, CONVERT_TZ(NOW(), '+00:00','-06:00'));";
 
 	if ($conn->query($query) === TRUE) {
     		error_log( "New record created successfully");
