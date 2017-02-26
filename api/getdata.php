@@ -25,8 +25,12 @@ if ($response = $conn->query($query))
     //   echo "Response is success<br>";
     while ($row = $response->fetch_row())
     {
+    	$id = $row[0];
+    	$beaconID = $row[1];
+    	$contents = $row[2];
+    	$location = $row[3];
 
-        array_push($jsonData, $row);
+        array_push($jsonData, array($contents, $location));
     }
 }
 else
@@ -35,6 +39,6 @@ else
     // echo "Error: " . $query . "<br>" . $conn->error;
 }
 
-echo '{ "data": ' . json_encode($jsonData) . '}';
+echo json_encode($jsonData);
 
 $conn->close();

@@ -6,17 +6,42 @@
             src="https://code.jquery.com/jquery-2.2.4.min.js"
             integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
             crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.4/js/dataTables.buttons.min.js"></script>
+    <script src="//cdn.datatables.net/buttons/1.2.4/js/buttons.flash.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script src="//cdn.datatables.net/buttons/1.2.4/js/buttons.html5.min.js"></script>
+    <script src="//cdn.datatables.net/buttons/1.2.4/js/buttons.print.min.js"></script>
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/buttons/1.2.4/css/buttons.dataTables.min.css" rel="stylesheet">
 </head>
 <body>
     <h1> Beacon Data</h1>
 
+    <table id="beacons" class="display" cellspacing="0" width="100%">
+        <thead>
+        <tr>
+            <th>Beacon ID</th>
+            <th>Box Contents</th>
+            <th>Box Location</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <th>Beacon ID</th>
+            <th>Box Contents</th>
+            <th>Box Location</th>
+        </tr>
+        </tfoot>
+    </table>
+
+    <br><br><br>
+    <h1> Last Checkin </h1>
     <table id="last-checkin" class="display" cellspacing="0" width="100%">
-        <caption> Last Checkin</caption>
         <thead>
         <tr>
             <th>Beacon ID</th>
@@ -38,12 +63,42 @@
 
 </body>
 <script>
+
+        var checkinTable;
+        var beaconTable;
+
         $(document).ready(function()
         {
-        $('#last-checkin').DataTable(
-            {
-            "ajax": '/api/lastcheckin.php'
-            } );
+            checkinTable = $('#last-checkin').DataTable(
+                {
+                    "bPaginate": false,
+                    "ajax": '/api/lastcheckin.php',
+                    dom: 'Bfrtip',
+                    buttons: [
+                        'copy', 'csv', 'excel', 'pdf', 'print'
+                    ]
+                } );
+
+            beaconTable = $('#beacons').DataTable(
+                {
+                    "bPaginate": false,
+                    "ajax": '/api/allbeacons.php',
+                    dom: 'Bfrtip',
+                    buttons: [
+                        'copy', 'csv', 'excel', 'pdf', 'print'
+                    ]
+                } );
+
+            window.setInterval(function(){
+                repeatingFunction();
+            }, 5000);
         } );
+
+        function repeatingFunction()
+        {
+            beaconTable.ajax.reload();
+            checkinTable.ajax.reload();
+        }
+
 </script>
 </html>
