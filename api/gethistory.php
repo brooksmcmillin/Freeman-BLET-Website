@@ -7,6 +7,8 @@
     $username = "freeman";
     $password = "freemanhackdfw";
 
+    $beaconID = $_GET["beaconID"];
+
     $conn = new mysqli($server, $username, $password, $database);
 
     if ($conn->connect_error) {
@@ -14,9 +16,7 @@
     //    die("Connection failed: " . $conn->connect_error);
     }
 
-    $query = "SELECT beacon.beacon_id, device_name, MAX(date), checkin.latitude, checkin.longitude, beacon.box_contents FROM checkin 
-JOIN beacon on beacon.beacon_id = checkin.beacon_id
-GROUP BY beacon_id";
+    $query = "SELECT * from checkin WHERE beacon_id = {$beaconID}";
 
     $jsonData = array();
 
@@ -25,17 +25,14 @@ GROUP BY beacon_id";
      //   echo "Response is success<br>";
         while ($row = $response->fetch_row())
         {
-            $beacon_id = $row[0];
-            $device_name = $row[1];
-            $box_data = $row[5];
-            $date = $row[2];
-            $latitude = $row[3];
-            $longitude = $row[4];
+            $id = $row[0];
+            $beacon_id = $row[1];
+            $device_name = $row[2];
+            $date = $row[3];
+            $latitude = $row[4];
+            $longitude = $row[5];
 
-            array_push($jsonData, array(
-                "<a href='/display.html?beaconID={$beacon_id}'>" . $beacon_id . "</a>",
-                $device_name,
-                $box_data,
+            array_push($jsonData, array($beacon_id, $device_name,
                 "<a href='http://maps.google.com/maps?q={$latitude},{$longitude}&ll={$latitude},{$longitude}&z=17'>(" . $latitude . ", " . $longitude . ")</a>",
                 $date));
         }

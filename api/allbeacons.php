@@ -30,7 +30,10 @@
             $latitude = $row[4];
             $longitude = $row[5];
 
-            array_push($jsonData, array($beacon_id, $box_contents, $box_location,
+            array_push($jsonData, array(
+                "<a href='/display.html?beaconID={$beacon_id}'>" . $beacon_id . "</a>",
+                $box_contents,
+                $box_location,
                 "<a href='http://maps.google.com/maps?q={$latitude},{$longitude}&ll={$latitude},{$longitude}&z=17'>(" . $latitude . ", " . $longitude . ")</a>"));
         }
     }
